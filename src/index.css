@@ -1,84 +1,96 @@
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Bold.ttf') format('truetype');
-  font-weight: 700; /* Bold */
+  font-weight: 700;
+  /* Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-BoldItalic.ttf') format('truetype');
-  font-weight: 700; /* Bold */
+  font-weight: 700;
+  /* Bold */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Heavy.ttf') format('truetype');
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-HeavyItalic.ttf') format('truetype');
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Light.ttf') format('truetype');
-  font-weight: 300; /* Light */
+  font-weight: 300;
+  /* Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-LightItalic.ttf') format('truetype');
-  font-weight: 300; /* Light */
+  font-weight: 300;
+  /* Light */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Medium.ttf') format('truetype');
-  font-weight: 500; /* Medium */
+  font-weight: 500;
+  /* Medium */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-MediumItalic.ttf') format('truetype');
-  font-weight: 500; /* Medium */
+  font-weight: 500;
+  /* Medium */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Regular.ttf') format('truetype');
-  font-weight: 400; /* Regular */
+  font-weight: 400;
+  /* Regular */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-RegularItalic.ttf') format('truetype');
-  font-weight: 400; /* Regular */
+  font-weight: 400;
+  /* Regular */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-Semibold.ttf') format('truetype');
-  font-weight: 600; /* Semibold */
+  font-weight: 600;
+  /* Semibold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProText';
   src: url('../public/fonts/SFProText-SemiboldItalic.ttf') format('truetype');
-  font-weight: 600; /* Semibold */
+  font-weight: 600;
+  /* Semibold */
   font-style: italic;
 }
 
@@ -86,6 +98,7 @@
 body {
   margin: 0;
   font-family: 'SFProText', sans-serif;
+  background-color: #F3F3F3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

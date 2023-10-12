@@ -40,3 +40,68 @@
     border-radius: 100px;
     background: #335DC9;
 }
+
+.privacy-security__bottom {
+    padding-top: 32px;
+}
+
+.info-form {
+    padding: 16px 24px 24px 24px;
+    border-radius: 24px;
+    background: #FFF;
+}
+
+.info-form__title {
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.info-form__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.info-form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-form__item label {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.info-form__item input {
+    padding: 11px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F5F8FF;
+}
+
+.info-form__item input::placeholder {
+    color: #9294AA;
+}
+
+.info-form__item input:focus {
+    outline: 1px solid #335DC9;
+}
+
+.info-form__avatar {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.info-form__choose-avatar {
+    width: 121px;
+    height: 121px;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: url('../../../../assets/img/default_avatar.png');
+    border-radius: 100%;
+}
