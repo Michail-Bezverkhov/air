@@ -88,6 +88,14 @@
   gap: 8px;
 }
 
+.app__nav-footer svg:hover {
+  fill: #335DC9;
+}
+
+.app__nav-footer svg:focus {
+  fill: #0E41C4;
+}
+
 .app-nav__lang-btn,
 .app-nav__lang span {
   color: #5D5F79;

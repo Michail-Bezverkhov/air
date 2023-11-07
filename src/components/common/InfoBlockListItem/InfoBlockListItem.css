@@ -112,6 +112,14 @@
     background: #335DC9;
 }
 
+.info-block__table-btns svg:hover {
+    fill: #335DC9;
+}
+
+.info-block__table-btns svg:focus {
+    fill: #0E41C4;
+}
+
 @media (min-width: 1440px) {
     .info-block__item-btns {
         flex-direction: row;

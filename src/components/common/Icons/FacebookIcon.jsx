@@ -1,5 +1,4 @@
 import React from "react";
-import "./Icons.css";
 
 const FacebookIcon = () => {
     return (
