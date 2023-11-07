@@ -2,12 +2,11 @@
     padding: 16px 10px 24px 10px;
 }
 
-.privacy-security__top {
+.privacy-security__menu {
     padding: 0 14px;
 }
 
 .privacy-security__title {
-    margin-bottom: 24px;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
@@ -20,14 +19,23 @@
 
 .privacy-security__tabs-btn {
     position: relative;
-    padding: 8px 0;
+    padding: 9px 0;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
 }
 
+.privacy-security__tabs-btn:hover {
+    color: #335DC9;
+    font-weight: 600;
+}
+
 .privacy-security__tabs-btn--active {
     font-weight: 600;
+}
+
+.privacy-security__tabs-btn--active:hover {
+    color: #2E3A59;
 }
 
 .privacy-security__tabs-btn--active::after {
@@ -41,67 +49,57 @@
     background: #335DC9;
 }
 
-.privacy-security__bottom {
+.privacy-security__content {
     padding-top: 32px;
 }
 
-.info-form {
-    padding: 16px 24px 24px 24px;
-    border-radius: 24px;
-    background: #FFF;
-}
-
-.info-form__title {
-    margin-bottom: 24px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 18px;
-}
-
-.info-form__item:not(:last-child) {
-    margin-bottom: 16px;
-}
-
-.info-form__item {
+.privacy-security__menu-top {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 
-.info-form__item label {
-    margin-bottom: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 15px;
+.privacy-security__profile-btn {
+    display: none;
+    align-items: center;
+    gap: 8px;
 }
 
-.info-form__item input {
-    padding: 11px 16px;
+.privacy-security__profile-btn:hover {
+    color: #335DC9;
+}
+
+.privacy-security__profile-name {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    border: none;
-    border-radius: 8px;
-    background-color: #F5F8FF;
 }
 
-.info-form__item input::placeholder {
-    color: #9294AA;
-}
+@media (min-width: 1440px) {
+    .privacy-security {
+        flex: 1;
+        min-height: 100vh;
+        padding: 24px 24px 24px 48px;
+        border-radius: 30px 0px 0px 20px;
+        background: #F3F3F3;
+    }
 
-.info-form__item input:focus {
-    outline: 1px solid #335DC9;
-}
+    .privacy-security__profile-btn {
+        display: flex;
+    }
 
-.info-form__avatar {
-    text-align: center;
-    margin-bottom: 16px;
-}
+    .privacy-security__title {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+    }
 
-.info-form__choose-avatar {
-    width: 121px;
-    height: 121px;
-    font-size: 16px;
-    font-weight: 300;
-    background-image: url('../../../../assets/img/default_avatar.png');
-    border-radius: 100%;
+    .privacy-security__content {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        max-height: 586px;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 }

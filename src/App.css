@@ -1,4 +1,5 @@
 .app__header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,5 +18,156 @@
 
 .app__nav {
   display: flex;
+  align-items: center;
   gap: 8px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 24px 32px 24px;
+  height: calc(100vh - 72px);
+  background: url("assets/img/burger-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app__nav--active .burger-menu {
+  display: flex;
+}
+
+.dropdown-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.dropdown-header--active svg {
+  rotate: 180deg;
+}
+
+.dropdown-header__name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #00042D;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-list__item {
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2E3A59;
+}
+
+.dropdown-list__item--active {
+  font-weight: 600;
+  background-color: #FFFFFFCC;
+}
+
+.app__nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__nav-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-nav__lang-btn,
+.app-nav__lang span {
+  color: #5D5F79;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.app-nav__lang-btn--active {
+  color: #00042D;
+}
+
+.app__nav-burger {
+  display: flex;
+}
+
+.app__nav-profile {
+  display: flex;
+}
+
+.app__nav-burger-close {
+  display: none;
+}
+
+.app__nav--active {
+  background: url("assets/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app__nav--active .burger-menu {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.app__nav--active .app__nav-profile,
+.app__nav--active .app__nav-burger {
+  display: none;
+}
+
+.app__nav--active .app__nav-burger-close {
+  display: flex;
+}
+
+.side-bar-menu {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+
+  body {
+    background: url("assets/img/burger-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .app {
+    display: flex;
+  }
+
+  .app__header {
+    display: none;
+  }
+
+  .side-bar-menu {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 32px 24px;
+  }
+
+  .side-bar-menu__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
 }

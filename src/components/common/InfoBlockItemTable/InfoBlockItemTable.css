@@ -1,0 +1,27 @@
+table {
+    gap: 13px;
+}
+
+table th {
+    padding: 10px;
+    border-radius: 4px;
+    background: #E5E6EA;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+table td {
+    padding: 6px 10px 8px 10px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #F3F3F3;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.info-block__table-btns {
+    display: flex;
+    gap: 12px;
+}

@@ -1,0 +1,119 @@
+.info-block__item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.info-block__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.info-block__item-btns {
+    flex-direction: column;
+}
+
+.info-block__item-name {
+    margin-top: 2px;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #5D5F79;
+}
+
+.info-block__item-data {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.info-block__sessions-data {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #9294AA;
+}
+
+.info-block__item-status {
+    position: relative;
+    margin-left: 8px;
+    padding-left: 12px;
+    font-weight: 600;
+    color: #38761D;
+}
+
+.info-block__item-status::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #93C47D;
+}
+
+.info-block__item-column {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-block__item-column .info-block__item-name {
+    white-space: wrap;
+}
+
+.info-block__item-accesses {
+    display: flex;
+}
+
+.info-block__item-cabinet {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    border-radius: 16px;
+    background: #F3F3F3;
+}
+
+.info-block__item-cabinet:not(:last-child) {
+    margin-right: 27px;
+}
+
+.info-block__item-cabinet-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-block__item-cabinet-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.info-block__item-cabinet-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #2E3A59;
+    background: #E5EBFB;
+}
+
+.info-block__item-cabinet-btn:hover {
+    color: #FFF;
+    background: #335DC9;
+}
+
+@media (min-width: 1440px) {
+    .info-block__item-btns {
+        flex-direction: row;
+    }
+}

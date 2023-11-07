@@ -1,0 +1,46 @@
+.info-block__item-btn {
+    display: flex;
+    min-height: 32px;
+    padding: 4px 16px;
+    align-items: center;
+    gap: 3px;
+    border-radius: 8px;
+    background-color: #E5EBFB;
+}
+
+.info-block__item-btn:hover {
+    outline: 2px solid #335DC9;
+    background: #FFF;
+}
+
+.info-block__item-btn:focus {
+    outline: 2px solid #0E41C3;
+    background: #D3DCF4;
+}
+
+.info-block__item-btn svg {
+    fill: #2E3A59;
+}
+
+.info-block__item-btn:hover svg {
+    fill: #335DC9;
+}
+
+.info-block__item-btn:focus svg {
+    fill: #0E41C4;
+}
+
+.info-block__item-btn-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #2E3A59;
+}
+
+.info-block__item-btn:hover .info-block__item-btn-text {
+    color: #335DC9;
+}
+
+.info-block__item-btn:focus .info-block__item-btn-text {
+    color: #0E41C4;
+}
